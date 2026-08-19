@@ -1,0 +1,11 @@
+const serviceButtons=document.querySelectorAll('.service-switch button');
+const fare=document.querySelector('#fare');
+const pickup=document.querySelector('#pickup');
+const destination=document.querySelector('#destination');
+const booking=document.querySelector('#booking-view');
+const tracking=document.querySelector('#tracking-view');
+serviceButtons.forEach(button=>button.addEventListener('click',()=>{serviceButtons.forEach(item=>item.classList.remove('active'));button.classList.add('active');fare.textContent=button.dataset.service==='dispatch'?'₦800 – ₦1,200':'₦700 – ₦1,000'}));
+document.querySelectorAll('.place').forEach(place=>place.addEventListener('click',()=>{destination.value=place.dataset.place;destination.focus()}));
+document.querySelector('#trip-form').addEventListener('submit',event=>{event.preventDefault();document.querySelector('#track-pickup').textContent=pickup.value;document.querySelector('#track-destination').textContent=destination.value;booking.hidden=true;tracking.hidden=false;window.scrollTo(0,0)});
+document.querySelector('.back').addEventListener('click',()=>{tracking.hidden=true;booking.hidden=false});
+document.querySelector('.cancel').addEventListener('click',()=>{tracking.hidden=true;booking.hidden=false;destination.value=''});
