@@ -1,0 +1,1 @@
+{ "expo": { "name": "MaraGo Rider", "slug": "marago-rider", "version": "0.1.0", "orientation": "portrait", "userInterfaceStyle": "light", "android": { "package": "com.marago.rider" }, "ios": { "bundleIdentifier": "com.marago.rider" } } }

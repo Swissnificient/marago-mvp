@@ -1,0 +1,12 @@
+{
+  "name": "marago-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/*", "backend"],
+  "scripts": {
+    "start:api": "npm --workspace backend start",
+    "dev:customer": "npm --workspace @marago/customer start",
+    "dev:rider": "npm --workspace @marago/rider start"
+  },
+  "engines": { "node": ">=20.19.4" }
+}

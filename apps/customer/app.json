@@ -1,0 +1,1 @@
+{ "expo": { "name": "MaraGo", "slug": "marago-customer", "version": "0.1.0", "orientation": "portrait", "userInterfaceStyle": "light", "android": { "package": "com.marago.customer" }, "ios": { "bundleIdentifier": "com.marago.customer" } } }
