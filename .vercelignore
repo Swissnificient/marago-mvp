@@ -1,0 +1,7 @@
+# The first Vercel deployment is a static product demo only.
+backend/
+apps/
+node_modules/
+.env
+.env.*
+*.test.js
