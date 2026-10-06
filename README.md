@@ -18,6 +18,14 @@ npm run start:api
 
 The health check is at `http://localhost:4000/health`. Run `npm --workspace backend test` to check the customer/trip flow.
 
+## Test a customer request and rider acceptance locally
+
+1. Start the API with `npm run start:api`.
+2. Find your computer's local IPv4 address using `hostname -I`.
+3. In both `apps/customer/` and `apps/rider/`, copy `.env.example` to `.env` and replace `192.168.1.10` with that IPv4 address. Do not use `localhost` on a physical phone.
+4. Put the phone and computer on the same Wi-Fi, then start each Expo app in its own terminal: `npm run dev:customer` and `npm run dev:rider`.
+5. Create a customer trip, take the rider app online, and accept the request. Both screens update via the local API.
+
 ## Start the mobile apps
 
 The current Expo toolchain requires Node.js `20.19.4` or newer. After upgrading Node and running `npm install`, run one command in a separate terminal:
