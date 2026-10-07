@@ -4,6 +4,7 @@
   "private": true,
   "workspaces": ["apps/*", "backend"],
   "scripts": {
+    "build": "node scripts/build-static.js",
     "start:api": "npm --workspace backend start",
     "dev:customer": "npm --workspace @marago/customer start",
     "dev:rider": "npm --workspace @marago/rider start"
